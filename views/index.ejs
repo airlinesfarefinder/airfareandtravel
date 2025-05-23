@@ -956,7 +956,7 @@
 
 
 
-    <section class="dest_bx" style="padding: 40px 15px; background: #f9f9f9;">
+    <section class="dest_bx" style="padding: 40px 15px; background: #f9f9f9; justify-content: center;justify-items: center; ">
         <style>
           .package_con {
             flex: 0 0 auto;
@@ -1004,8 +1004,14 @@
           .dest-cards {
             display: flex;
             flex-wrap: wrap;
+        
             gap: 24px;
-            justify-content: flex-start;
+            /* justify-content: flex-start; */
+            justify-content:center;
+            /* justify-items: flex-start; */
+            /* justify-items: center; */
+
+            /* align-content: center; */
           }
       
           @media (max-width: 768px) {
@@ -1037,7 +1043,7 @@
             </div>
           </div>
       
-          <div class="row dest-cards">
+          <div class=" dest-cards">
             <!-- Destination Cards -->
             <div class="package_con">
               <div class="item_dest">
@@ -1110,6 +1116,36 @@
                 </a>
               </div>
             </div>
+
+
+
+
+            <div class="package_con">
+                <div class="item_dest">
+                  <a href="#">
+                    <img src="images/chicago.jpg" alt="New York" class="img-fluid">
+                    <div class="hot_deal">
+                      <strong>Fare starting From</strong>
+                      <p>Chicago <span>$180</span></p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+
+
+              <div class="package_con">
+                <div class="item_dest">
+                  <a href="#">
+                    <img src="images/los-angeles.jpg" alt="New York" class="img-fluid">
+                    <div class="hot_deal">
+                      <strong>Fare starting From</strong>
+                      <p>Los Angeles <span>$250</span></p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
           </div>
         </div>
       </section>

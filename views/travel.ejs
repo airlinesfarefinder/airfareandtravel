@@ -851,6 +851,72 @@
 
 
     <section class="dest_bx" style="padding: 40px 15px; background: #f9f9f9;">
+        <style>
+          .package_con {
+            flex: 0 0 auto;
+            width: 100%;
+            max-width: 220px;
+          }
+      
+          .item_dest {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            padding: 10px;
+          }
+      
+          .item_dest img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+          }
+      
+          .hot_deal {
+            padding: 12px 0 6px;
+            text-align: center;
+          }
+      
+          .hot_deal strong {
+            display: block;
+            font-size: 13px;
+            color: #555;
+          }
+      
+          .hot_deal p {
+            margin: 5px 0;
+            font-size: 15px;
+            color: #222;
+          }
+      
+          .hot_deal span {
+            color: #e60000;
+          }
+      
+          .dest-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: flex-start;
+          }
+      
+          @media (max-width: 768px) {
+            .package_con {
+              max-width: 100%;
+            }
+      
+            .item_dest img {
+              height: 200px !important;
+            }
+      
+            .item_dest {
+              padding: 16px;
+            }
+          }
+        </style>
+      
         <div class="container" style="max-width: 1200px; margin: 0 auto;">
           <div class="row" style="text-align: center; margin-bottom: 30px;">
             <div class="col-12">
@@ -865,89 +931,88 @@
             </div>
           </div>
       
-          <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 24px;">
-            <!-- Destination Card Template -->
-            <!-- Repeat this block for each destination -->
-            <div class="package_con" style="flex: 0 0 auto; width: 100%; max-width: 220px;">
-              <div class="item_dest" style="background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s; padding: 10px;">
+          <div class="row dest-cards">
+            <!-- Destination Cards -->
+            <div class="package_con">
+              <div class="item_dest">
                 <a href="#" style="text-decoration: none; color: inherit; display: block;">
-                  <img src="images/dubai2.jpg" alt="Dubai" class="img-fluid" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px;">
-                  <div class="hot_deal" style="padding: 12px 0 6px; text-align: center;">
-                    <strong style="display: block; font-size: 13px; color: #555;">Fare starting From</strong>
-                    <p style="margin: 5px 0; font-size: 15px; color: #222;">Dubai <span style="color: #e60000;">$1,637</span></p>
+                  <img src="images/dubai2.jpg" alt="Dubai" class="img-fluid">
+                  <div class="hot_deal">
+                    <strong>Fare starting From</strong>
+                    <p>Dubai <span>$1,637</span></p>
                   </div>
                 </a>
               </div>
             </div>
       
-            <!-- Europe -->
-            <div class="package_con" style="flex: 0 0 auto; width: 100%; max-width: 220px;">
-              <div class="item_dest" style="background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s; padding: 10px;">
-                <a href="#" style="text-decoration: none; color: inherit; display: block;">
-                  <img src="images/europe.jpg" alt="Europe" class="img-fluid" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px;">
-                  <div class="hot_deal" style="padding: 12px 0 6px; text-align: center;">
-                    <strong style="display: block; font-size: 13px; color: #555;">Fare starting From</strong>
-                    <p style="margin: 5px 0; font-size: 15px; color: #222;">Europe <span style="color: #e60000;">$1,198</span></p>
+            <div class="package_con">
+              <div class="item_dest">
+                <a href="#">
+                  <img src="images/europe.jpg" alt="Europe" class="img-fluid">
+                  <div class="hot_deal">
+                    <strong>Fare starting From</strong>
+                    <p>Europe <span>$1,198</span></p>
                   </div>
                 </a>
               </div>
             </div>
       
-            <!-- Canada -->
-            <div class="package_con" style="flex: 0 0 auto; width: 100%; max-width: 220px;">
-              <div class="item_dest" style="background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s; padding: 10px;">
-                <a href="#" style="text-decoration: none; color: inherit; display: block;">
-                  <img src="images/Canada.jpg" alt="Canada" class="img-fluid" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px;">
-                  <div class="hot_deal" style="padding: 12px 0 6px; text-align: center;">
-                    <strong style="display: block; font-size: 13px; color: #555;">Fare starting From</strong>
-                    <p style="margin: 5px 0; font-size: 15px; color: #222;">Canada <span style="color: #e60000;">$682</span></p>
+            <div class="package_con">
+              <div class="item_dest">
+                <a href="#">
+                  <img src="images/Canada.jpg" alt="Canada" class="img-fluid">
+                  <div class="hot_deal">
+                    <strong>Fare starting From</strong>
+                    <p>Canada <span>$682</span></p>
                   </div>
                 </a>
               </div>
             </div>
       
-            <!-- London -->
-            <div class="package_con" style="flex: 0 0 auto; width: 100%; max-width: 220px;">
-              <div class="item_dest" style="background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s; padding: 10px;">
-                <a href="#" style="text-decoration: none; color: inherit; display: block;">
-                  <img src="images/uk.jpg" alt="London" class="img-fluid" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px;">
-                  <div class="hot_deal" style="padding: 12px 0 6px; text-align: center;">
-                    <strong style="display: block; font-size: 13px; color: #555;">Fare starting From</strong>
-                    <p style="margin: 5px 0; font-size: 15px; color: #222;">London <span style="color: #e60000;">$170</span></p>
+            <div class="package_con">
+              <div class="item_dest">
+                <a href="#">
+                  <img src="images/uk.jpg" alt="London" class="img-fluid">
+                  <div class="hot_deal">
+                    <strong>Fare starting From</strong>
+                    <p>London <span>$170</span></p>
                   </div>
                 </a>
               </div>
             </div>
       
-            <!-- Las Vegas -->
-            <div class="package_con" style="flex: 0 0 auto; width: 100%; max-width: 220px;">
-              <div class="item_dest" style="background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s; padding: 10px;">
-                <a href="#" style="text-decoration: none; color: inherit; display: block;">
-                  <img src="images/lasvegas0.jpg" alt="Las Vegas" class="img-fluid" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px;">
-                  <div class="hot_deal" style="padding: 12px 0 6px; text-align: center;">
-                    <strong style="display: block; font-size: 13px; color: #555;">Fare starting From</strong>
-                    <p style="margin: 5px 0; font-size: 15px; color: #222;">Las Vegas <span style="color: #e60000;">$148</span></p>
+            <div class="package_con">
+              <div class="item_dest">
+                <a href="#">
+                  <img src="images/lasvegas0.jpg" alt="Las Vegas" class="img-fluid">
+                  <div class="hot_deal">
+                    <strong>Fare starting From</strong>
+                    <p>Las Vegas <span>$148</span></p>
                   </div>
                 </a>
               </div>
             </div>
       
-            <!-- New York -->
-            <div class="package_con" style="flex: 0 0 auto; width: 100%; max-width: 220px;">
-              <div class="item_dest" style="background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s; padding: 10px;">
-                <a href="#" style="text-decoration: none; color: inherit; display: block;">
-                  <img src="images/newyork.jpg" alt="New York" class="img-fluid" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px;">
-                  <div class="hot_deal" style="padding: 12px 0 6px; text-align: center;">
-                    <strong style="display: block; font-size: 13px; color: #555;">Fare starting From</strong>
-                    <p style="margin: 5px 0; font-size: 15px; color: #222;">New York <span style="color: #e60000;">$230</span></p>
+            <div class="package_con">
+              <div class="item_dest">
+                <a href="#">
+                  <img src="images/newyork.jpg" alt="New York" class="img-fluid">
+                  <div class="hot_deal">
+                    <strong>Fare starting From</strong>
+                    <p>New York <span>$230</span></p>
                   </div>
                 </a>
               </div>
             </div>
-      
           </div>
         </div>
       </section>
+      
+
+
+
+
+      
       
       
 
